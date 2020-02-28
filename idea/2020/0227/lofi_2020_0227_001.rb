@@ -20,7 +20,7 @@ live_loop :chord, sync: :ticks do
   end
 end
 
-live_loop :bass, sync: :ticks do
+live_loop :beats, sync: :ticks do
   sample_rate = (sample_duration :loop_amen) / 4.0
   sample :loop_amen, rate: sample_rate
   sleep 4
