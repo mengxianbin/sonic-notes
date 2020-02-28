@@ -6,10 +6,8 @@ live_loop :ticks do
 end
 
 define :play_ch do |ch|
-  ##| play ch, sustain: 4
-  ##| sleep 4
   play_pattern_timed ch, 0.125
-  sleep 3
+  sleep 3.5
 end
 
 live_loop :chord, sync: :ticks do
